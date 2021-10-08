@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="{% static 'website/css/index.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <!-- Animation AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+  {% block content %}
+  {% endblock content %}
+
+  <script src="{% static 'website/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'website/js/bootstrap.min.js"></script>
+  <script src="{% static 'website/js/script_padrao.js"></script>
+  <script src="{% static 'website/js/popper.min.js"></script>
+  <script src="{% static 'website/js/jquery-3.6.0.js"></script>
+  <!-- Animation AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

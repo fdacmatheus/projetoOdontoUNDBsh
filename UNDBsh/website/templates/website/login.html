@@ -1,0 +1,47 @@
+{% extends 'website/base.html'%}
+{% load static %}
+{% block title %} Login {% endblock title %}
+{% block content %}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <div class="fadeIn first">
+            <div class="logo">
+                <img src="{% static 'website/img/logo_UNDB.png' %}" alt="UNDB">
+            </div>
+            <h1 class="h-6">Área administrativa</h1>
+            <p class="text-secondary">Por favor, entre com suas informações abaixo</p>
+            <!-- Login Form -->
+            <form action="auth/" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label class="email" for="email">Email</label>
+                    <input type="email" class="form-control shadow-none" id="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group password">
+                    <label class="email" for="senha">Senha</label>
+                    <input type="password" class="form-control shadow-none" id="senha" name="senha" placeholder="Senha">
+                </div>
+                {% if messages %}
+                {% for m in messages %}
+                <div class="alert alert-warning" role="alert">
+                    {{ m }}
+                </div>
+                {% endfor %}
+                {% endif %}
+
+                <div id="button-submit" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <button type="submit" class="btn btn-primary botao">Entrar</button>
+                    <!-- <a href="/cadastro/">Não possui cadastro? Clique aqui.</a>-->
+                </div>
+                <div id="link-cadastro">
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

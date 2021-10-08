@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+#logo img{
+    width: 50%;
+    height: 50%;
+    
+}
+
+.arrow-back{
+    width: 50px !important;
+    
+}
+
+
+.fas{
+    top: 30px;
+    position: fixed;
+    cursor: pointer;
+    left: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: #1568e4;
+    position: fixed;
+}
+    .fas:hover{
+        font-size: 32px;
+        transition: 0.1s;
+    }

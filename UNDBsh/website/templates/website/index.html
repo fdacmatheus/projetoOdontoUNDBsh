@@ -1,0 +1,20 @@
+{% extends 'website/base.html'%}
+{% load static %}
+{% block title %} Bem-vindo {% endblock title %}
+{% block content %}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <div class="logo">
+                <img src="{% static 'website/img/logo_UNDB.png' %}" alt="UNDB">
+                <div>
+                </div>
+
+                <!-- Login Form -->
+                <button onclick="window.location.href='login/'">Acessar</button>
+
+            </div>
+        </div>
+        {% endblock content %}

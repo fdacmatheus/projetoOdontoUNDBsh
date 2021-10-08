@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #6cd8fa !important;
+  z-index: 0;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo img {
+  width: 50%;
+  height: 50%;
+}
+
+.fade-down {
+  height: 100% !important;
+}
+
+.arrow-back {
+  width: 50px !important;
+}
+
+.fas {
+  top: 30px;
+  position: fixed;
+  cursor: pointer;
+  left: 50px;
+  width: 50px;
+  font-size: 30px;
+  color: #ffffff;
+  position: fixed;
+}
+.fas:hover {
+  font-size: 32px;
+  transition: 0.1s;
+}
+
+.div-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/tooth.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.container-fluid {
+  height: 100% !important;
+}
+
+#login {
+  z-index: 99999999;
+}
+.form-group input {
+  background-color: transparent !important    ;
+}
+.password {
+  padding-top: 5px;
+}
+
+.email {
+  padding-top: 20px;
+  color: #944dd6;
+}
+#email {
+  border: 0;
+  border-bottom: 2px solid #944dd6;
+  border-radius: 0;
+  z-index: 99999999;
+}
+#senha {
+  border: 0;
+  border-bottom: 2px solid #944dd6;
+  border-radius: 0;
+  z-index: 99999999;
+}
+
+#link-cadastro {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#button-submit {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#button-submit button {
+  color: #ffffff;
+  width: 287px;
+  height: 48px;
+  margin: 10px;
+  border-radius: 28px;
+  background-color: #9b51e0;
+  border: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#button-submit button:hover {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  background-color: #944dd6;
+  z-index: 99999999;
+}
+
+@media (max-width: 570px) {
+  .fas {
+    color: #6cd8fa;
+  }
+}
